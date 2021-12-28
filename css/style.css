@@ -78,6 +78,42 @@ body {
   background-color: #fff;
 }
 
+
+
+#achieve{
+  margin-bottom: -32px;
+}
+#achieve1{
+  margin-bottom: -34px;
+}
+#achieve2{
+  margin-bottom: -20px;
+}
+#achieve3{
+  margin-bottom: -28px;
+}
+#achieve4{
+  margin-bottom: -35px;
+}
+#achieve5{
+  margin-bottom: -24px;
+}
+#achieve6{
+  margin-bottom: -30px;
+}
+#achieve7{
+  margin-bottom: -26px;
+}
+#achieve8{
+  margin-bottom: -16px;
+}
+#achieve9{
+  margin-bottom: -32px;
+}
+
+
+
+
 [tabindex="-1"]:focus {
   outline: 0 !important;
 }
@@ -4585,6 +4621,7 @@ input[type="button"].btn-block {
 }
 
 .navbar-toggler {
+ 
   padding: 0.25rem 0.75rem;
   font-size: 1.25rem;
   line-height: 1;
@@ -4656,6 +4693,45 @@ input[type="button"].btn-block {
 }
 
 @media (max-width: 767.98px) {
+  #abc{
+    margin-left: -130px;
+  }
+  #abc1{
+    margin-left: -40px;
+  }
+  #abc2{
+    margin-left: -40px;
+  }
+  #achieve{
+    margin-bottom: -12px;
+  }
+  #achieve1{
+    margin-bottom: -20px;
+  }
+  #achieve2{
+    margin-bottom: -1px;
+  }
+  #achieve3{
+    margin-bottom: -6px;
+  }
+  #achieve4{
+    margin-bottom: -18px;
+  }
+  #achieve5{
+    margin-bottom: -4px;
+  }
+  #achieve6{
+    margin-bottom: -14px;
+  }
+  #achieve7{
+    margin-bottom: -6px;
+  }
+  #achieve8{
+    margin-bottom: -2px;
+  }
+  #achieve9{
+    margin-bottom: -34px;
+  }
   .navbar-expand-md > .container,
   .navbar-expand-md > .container-fluid {
     padding-right: 0;
@@ -4664,6 +4740,7 @@ input[type="button"].btn-block {
 }
 
 @media (min-width: 768px) {
+  
   .navbar-expand-md {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -12887,11 +12964,12 @@ textarea.form-control {
 }
 
 .topleft {
-  position: absolute;
-  top: 8px;
-  left: 16px;
+  /* position: absolute; */
+  /* top: -8px; */
+  margin-left: 35px;
+  margin-bottom: 5px;
   font-size: 18px;
-  z-index:999;
+  /* z-index:999; */
 }
 
 #cuslogo{
@@ -12913,3 +12991,4 @@ textarea.form-control {
 .ftco-footer-widget{
     padding-left:100px;
 }
+

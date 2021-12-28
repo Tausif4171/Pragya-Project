@@ -111,6 +111,7 @@
 		}
 
 		.menu-wrap .toggler:checked~.menu>div {
+			opacity: 0.8;
 			transform: scale(1);
 			transition-duration: var(--menu-speed);
 		}
