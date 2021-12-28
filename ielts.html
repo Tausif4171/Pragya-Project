@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Checkmate</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!-- Bootstrap 4.6 -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+    integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+  <link rel="stylesheet" href="css/animate.css">
+
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
+  <link rel="stylesheet" href="css/owl.theme.default.min.css">
+  <link rel="stylesheet" href="css/magnific-popup.css">
+
+  <link rel="stylesheet" href="css/aos.css">
+
+  <link rel="stylesheet" href="css/ionicons.min.css">
+
+  <link rel="stylesheet" href="css/flaticon.css">
+  <link rel="stylesheet" href="css/icomoon.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/hamburger.css">
+  <link rel="stylesheet" href="css/iconbars.css">
+
+  <style>
+    /* Accordion styles */
+    body {
+      background: #232323;
+    }
+
+    h3 {
+      color: #fff;
+      font-weight: 500;
+      letter-spacing: 3px;
+    }
+
+    .accordion {
+      margin: 40px 0;
+    }
+
+    .accordion .item {
+      border: none;
+      margin-bottom: 50px;
+      background: none;
+    }
+
+    .t-p {
+      color: #fff;
+      padding: 40px 30px 0px 30px;
+      font-weight: 400;
+      letter-spacing: 2px;
+    }
+
+    .accordion .item .item-header h2 button.btn.btn-link {
+      background: #333435;
+      color: white;
+      border-radius: 0px;
+      font-family: 'Poppins';
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 2.5;
+      text-decoration: none;
+    }
+
+    .accordion .item .item-header {
+      border-bottom: none;
+      background: transparent;
+      padding: 0px;
+      margin: 2px;
+    }
+
+    .accordion .item .item-header h2 button {
+      color: white;
+      font-size: 20px;
+      padding: 15px;
+      display: block;
+      width: 100%;
+      text-align: left;
+    }
+
+    .accordion .item .item-header h2 i {
+      float: right;
+      font-size: 30px;
+      color: #eca300;
+      background-color: black;
+      width: 60px;
+      height: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 5px;
+    }
+
+    button.btn.btn-link.collapsed i {
+      transform: rotate(0deg);
+    }
+
+    button.btn.btn-link i {
+      transform: rotate(180deg);
+      transition: 0.5s;
+    }
+    
+    td,th{
+        border:1px solid white;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- <div class="bg-top navbar-light">
+    	<div class="container">
+    		<div class="row no-gutters d-flex align-items-center align-items-stretch">
+    			<div class="col-md-4 d-flex align-items-center py-4">
+    				<a class="navbar-brand" href="index.html"><img src = "images/newlogo.png" style="width:100px; height:100px"></a>
+    			</div>
+	    		<div class="col-lg-8 d-block">
+		    		<div class="row d-flex">
+					    <div class="col-md d-flex topper align-items-center align-items-stretch py-md-4">
+					    	<div class="icon d-flex justify-content-center align-items-center"><span class="icon-paper-plane"></span></div>
+					    	<div class="text">
+					    		<span>Email</span>
+						    	<span>pragyaeducare@gmail.com</span>
+						    </div>
+					    </div>
+					    <div class="col-md d-flex topper align-items-center align-items-stretch py-md-4">
+					    	<div class="icon d-flex justify-content-center align-items-center"><span class="icon-phone2"></span></div>
+						    <div class="text">
+						    	<span>Call</span>
+						    	<span>Call Us: +91 98768-15155</span>
+						    </div>
+					    </div>
+					    <div class="col-md topper d-flex align-items-center justify-content-end">
+					    	<p class="mb-0">
+					    		<a href="pdf.pdf" class="btn py-2 px-3 btn-primary d-flex align-items-center justify-content-center">
+					    		<span>Download Brochure</span>
+					    		</a>
+					    	</p>
+					    </div>
+				    </div>
+			    </div>
+		    </div>
+		  </div>
+    </div>
+	  <nav class="navbar navbar-expand-lg navbar-dark bg-dark ftco-navbar-light" id="ftco-navbar">
+	    <div class="container d-flex align-items-center px-4">
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+	        <span class="oi oi-menu"></span> Menu
+	      </button>
+	      
+	      <div class="collapse navbar-collapse" id="ftco-nav">
+	        <ul class="navbar-nav mr-auto">
+	        	<li class="nav-item"><a href="index.html" class="nav-link pl-0">Home</a></li>
+	        	<li class="nav-item"><a href="about.html" class="nav-link">About Us</a></li>
+	        	<li class="nav-item"><a href="pdf.pdf" class="nav-link">IELTS Brochure</a></li>
+	        	<li class="nav-item active"><a href="ielts.html" class="nav-link">Our Courses</a></li>
+	        	<li class="nav-item"><a href="teacher.html" class="nav-link">Our Achievers</a></li>
+	          <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+	        </ul>
+	      </div>
+	    </div>
+	  </nav> -->
+  <!-- END nav -->
+
+
+  <section class="hero-wrap hero-wrap-2" style="background-image: url('Img/IMG_20210912_020133.jpg');">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row no-gutters slider-text align-items-center justify-content-center">
+        <div class="col-md-9 ftco-animate text-center">
+          <h1 class="mb-2 bread">Our Courses</h1>
+          <p class="breadcrumbs"><span class="mr-2"><a href="index.html">Home <i
+                  class="ion-ios-arrow-forward"></i></a></span> <span>Our Courses <i
+                class="ion-ios-arrow-forward"></i></span></p>
+        </div>
+      </div>
+      <div class="menu-wrap">
+        <input type="checkbox" class="toggler">
+        <div class="hamburger">
+          <div></div>
+        </div>
+        <div class="menu">
+          <div>
+            <div>
+              <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="ielts.html">Our Courses</a></li>
+                <li><a href="teacher.html">Our Achievers</a></li>
+                <li><a href="accreditation.html">Accreditation</a></li>
+                <li><a href="brochure.pdf" target="_blank">IELTS Brochure</a></li>
+                <li><a href="contact.html">Contact</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="ftco-section contact-section" style="background: linear-gradient(45deg, #49a09d, #5f2c82);">
+    <div class="container" style="max-width:1360px; overflow-x:auto;">
+      <table style="">
+        <thead>
+          <tr>
+            <th id="custom">&nbsp;&nbsp;&nbsp;</th>
+            <th id="custom">IELTS</th>
+            <th id="custom">PTE</th>
+            <th id="custom">CELPIP</th>
+            <th id="custom">CAEL</th>
+            <th id="custom">TOFEL</th>
+            <th id="custom">OET</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td id="custom">Course Name</td>
+            <td>International English Language Testing System</td>
+            <td>Pearson Language Tests</td>
+            <td>The Canadian English Language Proficiency Index Program</td>
+            <td>The Canadian Academic English Language </td>
+            <td>Test of English as a Foreign Language</td>
+            <td>Occupational English Test</td>
+          </tr>
+          <tr>
+            <td id="custom">Exam Pattern</td>
+            <td>Both Pen Paper and Computer Based Test</td>
+            <td>Computer Based Test</td>
+            <td>Computer Based Test</td>
+            <td>Computer Based Test</td>
+            <td>Computer Based Test</td>
+            <td>Computer Based Test</td>
+          </tr>
+          <tr>
+            <td id="custom">Conduction Body</td>
+            <td>Joint venture of IDP Australia, BC and Cambridge University</td>
+            <td>Pearson PLC Group,UK</td>
+            <td>UBC, Canada </td>
+            <td>Paragon Testing Enterprises Canada </td>
+            <td>Educational Testing Service (ETS), USA </td>
+            <td>Cambridge Boxhill Language Assessment Trust (CBLA) Australia </td>
+          </tr>
+          <tr>
+            <td id="custom">Recognition</td>
+            <td>Worldwide</td>
+            <td>Worldwide</td>
+            <td>Canada</td>
+            <td>Canada</td>
+            <td>USA</td>
+            <td>Only For Health Professionals</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <style>
+    #custom {
+      background-color: #55608f;
+    }
+
+    th,
+    td {
+      padding: 15px;
+      background-color: rgba(255, 255, 255, 0.2);
+      color: #fff;
+      text-align: center;
+    }
+
+    th {
+      text-align: center;
+    }
+
+    thead {
+      th: {
+        background-color: #55608f;
+      }
+    }
+
+    tbody {
+      tr : {
+        &:hover {
+          background-color: rgba(255, 255, 255, 0.3);
+        }
+      }
+
+      td {
+        position: relative;
+
+        &:hover {
+          &:before {
+            content: "";
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: -9999px;
+            bottom: -9999px;
+            background-color: rgba(255, 255, 255, 0.2);
+            z-index: -1;
+          }
+        }
+      }
+    }
+  </style>
+
+
+  <section class="ftco-services ftco-no-pb">
+    <div class="container-wrap">
+      <div class="row no-gutters">
+        <div class="col-md-3 d-flex services align-self-stretch py-5 px-4 ftco-animate bg-warning">
+          <div class="media block-6 d-block text-center">
+            <div class="icon d-flex justify-content-center align-items-center">
+              <img src="images/communication.png">
+            </div>
+            <div class="media-body p-2 mt-3">
+              <h3 class="heading">LISTENING</h3>
+              <p>30 Minutes | 4 Sections | 40 Questions</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 d-flex services align-self-stretch py-5 px-4 ftco-animate bg-info">
+          <div class="media block-6 d-block text-center">
+            <div class="icon d-flex justify-content-center align-items-center">
+              <img src="images/open-book.png">
+            </div>
+            <div class="media-body p-2 mt-3">
+              <h3 class="heading">READING</h3>
+              <p>60 Minutes | 3 Sections | 40 Questions</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 d-flex services align-self-stretch py-5 px-4 ftco-animate bg-warning">
+          <div class="media block-6 d-block text-center">
+            <div class="icon d-flex justify-content-center align-items-center">
+              <img src="images/contract.png">
+            </div>
+            <div class="media-body p-2 mt-3">
+              <h3 class="heading">WRITING</h3>
+              <p>60 Minutes | Task 1 (150 Words) | Task 2 (250 Words)</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 d-flex services align-self-stretch py-5 px-4 ftco-animate bg-info">
+          <div class="media block-6 d-block text-center">
+            <div class="icon d-flex justify-content-center align-items-center">
+              <img src="images/speaking.png">
+            </div>
+            <div class="media-body p-2 mt-3">
+              <h3 class="heading">SPEAKING</h3>
+              <p><span>11-14 Minutes | Introduction, Cue-Card, Follow-ups</span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="ftco-section contact-section" style="background: linear-gradient(45deg, #49a09d, #5f2c82);">
+    
+    <!-- Accordion -->
+    <div class="container">
+      <h3 class="text-center mt-5">Session Planning</h3>
+      <div class="accordion" id="accordionExample">
+
+        <div class="item">
+          <div class="item-header" id="headingOne">
+            <h2 class="mb-0">
+              <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseOne"
+                aria-expanded="true" aria-controls="collapseOne">
+                Regular Class
+                <i class="fa fa-angle-down"></i>
+              </button>
+            </h2>
+          </div>
+          <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+            <div class="t-p">
+              Monday, Tuesday, Wednesday, Thursday, Friday
+            </div>
+          </div>
+        </div>
+
+        <div class="item">
+          <div class="item-header" id="headingTwo">
+            <h2 class="mb-0">
+              <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo"
+                aria-expanded="false" aria-controls="collapseTwo">
+                Mock Test
+                <i class="fa fa-angle-down"></i>
+              </button>
+            </h2>
+          </div>
+          <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+            <div class="t-p">
+              Every Saturday (for all) and <br><br>
+              Wednesday (for learners)
+            </div>
+          </div>
+        </div>
+
+        <div class="item">
+          <div class="item-header" id="headingThree">
+            <h2 class="mb-0">
+              <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree"
+                aria-expanded="false" aria-controls="collapseThree">
+                Workshop
+                <i class="fa fa-angle-down"></i>
+              </button>
+            </h2>
+          </div>
+          <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+            <div class="t-p">
+              Every Wednesday covering indepth discussion on analytic reasoning, starategic planning, time Management
+              and
+              unique & innovative techniques to achieve higher bands
+            </div>
+          </div>
+        </div>
+
+        <div class="item">
+          <div class="item-header" id="headingFour">
+            <h2 class="mb-0">
+              <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFour"
+                aria-expanded="false" aria-controls="collapseFour">
+                Counselling
+                <i class="fa fa-angle-down"></i>
+              </button>
+            </h2>
+          </div>
+          <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+            <div class="t-p">
+              Time to time counselling session with students to know their psychology in order to motivate & coach them
+              accordingly
+            </div>
+          </div>
+        </div>
+
+        <div class="item">
+          <div class="item-header" id="headingFive">
+            <h2 class="mb-0">
+              <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFive"
+                aria-expanded="false" aria-controls="collapseFive">
+                Stress Management
+                <i class="fa fa-angle-down"></i>
+              </button>
+            </h2>
+          </div>
+          <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
+            <div class="t-p">
+              Daily 5 to 10 minutes of mindfulness session to improve awareness, focus and mental abilities of student
+            </div>
+          </div>
+        </div>
+
+        <div class="item">
+          <div class="item-header" id="headingSix">
+            <h2 class="mb-0">
+              <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseSix"
+                aria-expanded="false" aria-controls="collapseSix">
+                Other Activities
+                <i class="fa fa-angle-down"></i>
+              </button>
+            </h2>
+          </div>
+          <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordionExample">
+            <div class="t-p">
+              Time to time various other activities like fluency sessions, writing feedbacks etc.
+            </div>
+          </div>
+        </div>
+
+        <div class="item">
+          <div class="item-header" id="headingSeven">
+            <h2 class="mb-0">
+              <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseSeven"
+                aria-expanded="false" aria-controls="collapseSeven">
+                Financial Advice
+                <i class="fa fa-angle-down"></i>
+              </button>
+            </h2>
+          </div>
+          <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven" data-parent="#accordionExample">
+            <div class="t-p">
+              Exclusive sessions with students and their parents about financial requirements and their solutions for
+              study abroad
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <footer class="ftco-footer ftco-bg-dark ftco-section">
+    <div class="container">
+      <div class="row mb-5">
+        <div class="col-md-6 col-lg-4">
+          <div class="ftco-footer-widget mb-5">
+            <h2 class="ftco-heading-2">Checkmate IELTS</h2>
+            <div class="block-23 mb-3">
+              <ul>
+                <li class="mb-3"><span class="icon icon-map-marker"></span><span class="text">Above Bank of
+                    Baroda (Branch E Dena) Court Road, Barnala - 148101, Punjab</span>
+                </li>
+                <li class="mb-3"><span class="icon icon-phone"></span><span class="text">+91
+                    98768-15155</span></li>
+                <li class="mb-3"><span class="icon icon-envelope"></span><span
+                      class="text">pragyaeducarenbl@gmail.com</span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="ftco-footer-widget mb-5 ml-md-4">
+            <h2 class="ftco-heading-2">Links</h2>
+            <ul class="list-unstyled">
+              <li class="mb-2"><a href="index.html"><span class="ion-ios-arrow-round-forward mr-2"></span>Home</a></li>
+              <li class="mb-2"><a href="about.html"><span class="ion-ios-arrow-round-forward mr-2"></span>About
+                  Us</a></li>
+              <li class="mb-2"><a href="ielts.html"><span class="ion-ios-arrow-round-forward mr-2"></span>Our
+                  Courses</a>
+              </li>
+              <li class="mb-2"><a href="teacher.html"><span class="ion-ios-arrow-round-forward mr-2"></span>Our
+                  Achievers</a>
+              </li>
+              <li class="mb-2"><a href="accreditation.html">
+                  <span class="ion-ios-arrow-round-forward mr-2"></span>Accreditation
+                </a>
+              </li>
+              <li class="mb-2"><a href="brochure.pdf" target="_blank"><span
+                    class="ion-ios-arrow-round-forward mr-2"></span>IELTS
+                  Brochure</a>
+              </li>
+              <li class="mb-2"><a href="contact.html"><span class="ion-ios-arrow-round-forward mr-2"></span>Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="ftco-footer-widget mb-3">
+            <h2 class="ftco-heading-2">Subscribe Us!</h2>
+            <form action="#" class="subscribe-form">
+              <div class="form-group">
+                <input type="text" class="form-control mb-2 text-center" placeholder="Enter email address">
+                <input type="submit" value="Subscribe" class="form-control submit px-3">
+              </div>
+            </form>
+          </div>
+
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12 text-center text-white">
+          <p class="text-center">
+					M/S Pragya Immigration & Educare Private Limited<br>
+					<strong>CIN: U80903PB2020PTC052305</strong><br> Copyright &copy;
+				  <script>document.write(new Date().getFullYear());</script> All rights reserved 
+				  </p>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <div class="icon-bar">
+    <a href="https://www.facebook.com/checkmateIELTS/" target="_blank" class="facebook">
+      <i class="fa fa-facebook"></i></a>
+    <a href="https://instagram.com/_checkmateielts_?utm_medium=copy_link" target="_blank" class="instagram">
+      <i class="fa fa-instagram"></i></a>
+    <a href="https://twitter.com/checkmateIELTS?s=08" target="_blank" class="twitter">
+      <i class="fa fa-twitter"></i></a>
+    <a href="https://www.youtube.com/channel/UCA2BakyvAzmqHEOqwhLcirQ" target="_blank" class="youtube">
+      <i class="fa fa-youtube"></i></a>
+    <a href="https://www.linkedin.com/company/checkmateielts" target="_blank" class="linkedin">
+      <i class="fa fa-linkedin"></i></a>
+    <a href="brochure.pdf" target="_blank" class="download">
+      <i class="fa fa-download"></i></a>
+  </div>
+
+
+  <!-- loader -->
+  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px">
+      <circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee" />
+      <circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10"
+        stroke="#F96D00" />
+    </svg></div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+    crossorigin="anonymous"></script>
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/jquery.animateNumber.min.js"></script>
+  <script src="js/scrollax.min.js"></script>
+  <script
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
+  <script src="js/google-map.js"></script>
+  <script src="js/main.js"></script>
+
+</body>
+
+</html>
