@@ -219,15 +219,6 @@ img {
   border-style: none;
 }
 
-.topleft img {
-    vertical-align: middle;
-    border-style: none;
-    height: 75px;
-    margin-left: 40px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-
 svg {
   overflow: hidden;
   vertical-align: middle;
@@ -12205,8 +12196,8 @@ textarea.form-control {
   color: rgba(0, 0, 0, 0.8);
 }
 .testimony-wrap .user-img {
-  width: 120px;
-  height: 120px;
+  width: 160px;
+  height: 180px;
   /* border-radius: 50%; */
   position: relative;
 }
@@ -12893,4 +12884,32 @@ textarea.form-control {
     stroke-dasharray: 89, 200;
     stroke-dashoffset: -136px;
   }
+}
+
+.topleft {
+  position: absolute;
+  top: 8px;
+  left: 16px;
+  font-size: 18px;
+  z-index:999;
+}
+
+#cuslogo{
+  width:100px;
+  height:100px;
+}
+
+@media only screen and (max-width: 600px) {
+  #cuslogo{
+  width:50px;
+  height:50px;
+}
+
+.ftco-footer-widget{
+    padding-left:0px;
+}
+}
+
+.ftco-footer-widget{
+    padding-left:100px;
 }

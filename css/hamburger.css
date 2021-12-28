@@ -46,8 +46,8 @@
 
 		.menu-wrap .hamburger {
 			position: absolute;
-			top: 14;
-			right: 14;
+			top: 0;
+			right: 0;
 			z-index: 1;
 			width: 60px;
 			height: 60px;
